@@ -3,6 +3,7 @@ header{
     height: 65px;
     position: sticky;
     background-color: #377ADF;
+    user-select: none;
 }
 
 nav{
@@ -11,6 +12,29 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    color: white;
     font-size: 45px;
+}
+
+nav:hover{
+    cursor: pointer;
+}
+
+#indicator{
+    position: absolute;
+    left: 10px;
+    bottom: 0px;
+    width: 50px;
+    height: 10px;
+    background-color: white;
+    border-radius: 5px 5px 0px 0px;
+    transition: 0.5ms;
+}
+
+nav a{
+    color: white
+}
+
+nav a:hover{
+    text-transform: capitalize;
+    color:white
 }
